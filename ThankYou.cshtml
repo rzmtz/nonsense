@@ -1,0 +1,49 @@
+﻿<!-- This is the server side area-->
+@{
+    // validate the input from the form
+    string email = Request.Form["email"];
+    // add logic here to save the email address
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> Welcome to BYFS! </title>
+        <link rel="stylesheet" href="MyStyles.css" type="text/css" media="screen"/>
+        <script lang="javascript">
+            function getDate() {
+                var Today = new Date();
+                var formattedDate = (Today.getMonth() + 1) + "-" + 
+                    Today.getDate() + "-" + Today.getFullYear();
+                document.getElementById("datetext").innerHTML = formattedDate;    
+            }
+            </script>
+    </head>
+    <body onload="getDate()">
+        <div id="page_header">
+            <div id="corp_logo">
+                <p>Do what you do - better!</p>
+            </div>
+            <div id="page_menu">
+                <ul>
+                    <li><a href="home.htm">Home</a></li>
+                    <li><a href="services.htm">Services</a></li>
+                    <li><a href="history.htm">History</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="page_body">
+            <br/>
+            <p>Thank you, @email - we look forward to connecting with you!</p>
+            <br/>
+            <a href="home.htm">back to home page</a>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <p id="datetext">---</p>
+        </div>
+        <p style="font-size: 9px;">Copyright 2012 - Aggelos LLC. All rights reserved</p>
+    </body>
+</html>
+

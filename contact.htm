@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> Welcome to BYFS! </title>
+        <link rel="stylesheet" href="MyStyles.css" type="text/css" media="screen"/>
+    </head>
+    <body>
+        <div id="page_header">
+            <div id="corp_logo">
+                <p>Do what you do - better!</p>
+            </div>
+            <div id="page_menu">
+                <ul>
+                    <li><a href="home.cshtml">Home</a></li>
+                    <li><a href="services.htm">Services</a></li>
+                    <li><a href="history.htm">History</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="page_body">
+            <br/>
+           <p style="text-align: left;margin-left: 35px">Contact us at:</p>
+           <div id="office_pic">
+               <img src="images/offices.jpg" alt="Offices">
+           </div>
+           <a style="text-align: left" href="mailto:dougturn?subject=More%20Info" >info@BYFSINC.com</a></p>
+           <p style="text-align: left;margin-left: 135px">or</p>
+           <p style="text-align: left;margin-left: 115px">BYFS, Inc.</p>
+           <p style="text-align: left;margin-left: 115px">123 Happy Coder Lane</p>
+           <p style="text-align: left;margin-left: 115px">Seattle, WA 98065</p>
+           <p style="text-align: left;margin-left: 115px">425-111-1111</p>
+           
+            <div id="mailing_list">               
+              <form action="thankyou.cshtml" method="post">
+                 <fieldset style="margin-left: 10px;margin-right: 35px">
+                     <legend>Join Us!</legend>
+                     <p style="margin-left: 35px">Enter your email address below to be added to our mailing list:</p>
+                     <input type="text" size="40" style="margin-left: 35px" name="email" id="test"/>
+                     <input type="submit" value="Join our mailing list" />
+                  </fieldset>
+              </form>
+           </div>
+           <p style="text-align: center; font-size: 10px">Thank you for your business! We look forward to helping 
+                you do what you do - better!</p>           
+        </div>
+        <p style="font-size: 9px;">Copyright 2012 - Aggelos LLC. All rights reserved</p>
+    </body>
+</html>
